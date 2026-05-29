@@ -15,7 +15,7 @@
   "transform": [
     {
       "calculate": "abs(datum.Rate)",
-      "as": "DisplayRate"
+      "as": "AbsRate"
     }
   ],
   "mark": {
@@ -72,7 +72,7 @@
         "title": "Gender"
       },
       {
-        "field": "DisplayRate",
+        "field": "AbsRate",
         "type": "quantitative",
         "title": "Rate per 100,000",
         "format": ".1f"
