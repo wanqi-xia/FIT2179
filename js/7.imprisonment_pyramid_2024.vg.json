@@ -10,8 +10,14 @@
   "width": 600,
   "height": 500,
   "data": {
-    "url": "data/imprisonment_rate_pyramid_2024.csv"
+    "url": "../data/imprisonment_rate_pyramid_2024.csv"
   },
+  "transform": [
+    {
+      "calculate": "abs(datum.Rate)",
+      "as": "DisplayRate"
+    }
+  ],
   "mark": {
     "type": "bar"
   },
@@ -66,11 +72,10 @@
         "title": "Gender"
       },
       {
-        "field": "Rate",
+        "field": "DisplayRate",
         "type": "quantitative",
         "title": "Rate per 100,000",
-        "format": ".1f",
-        "formatType": "number"
+        "format": ".1f"
       }
     ]
   },
