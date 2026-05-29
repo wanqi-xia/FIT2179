@@ -10,7 +10,7 @@
   "width": 600,
   "height": 500,
   "data": {
-    "url": "../data/imprisonment_rate_pyramid_2024.csv"
+    "url": "data/imprisonment_rate_pyramid_2024.csv"
   },
   "transform": [
     {
